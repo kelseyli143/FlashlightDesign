@@ -1,0 +1,15 @@
+Partlist exported from C:/Users/kelseyli143/Documents/EAGLE/projects/New_Project/Light Schematic.sch at 11/26/2018 5:25 PM
+
+Part Value   Device                Package  Description                MF MPN OC_FARNELL OC_NEWARK PROD_ID   VALUE
+C1   50µF    C-USC0805             C0805    CAPACITOR, American symbol                                            
+C2   30µF    C-USC0805             C0805    CAPACITOR, American symbol                                            
+C3   22pF    C-USC0805             C0805    CAPACITOR, American symbol                                            
+C4   22pF    C-USC0805             C0805    CAPACITOR, American symbol                                            
+D1   RED     LED-RED0603           LED-0603 Red SMD LED                                            DIO-00819 RED  
+G1   AB9V    AB9V                  AB9V     9-V BATTERY CLIP                                                      
+IC1  7805T   7805T                 TO220H   Positive VOLTAGE REGULATOR                                            
+Q1           CRYSTALHC49S          HC49/S   CRYSTAL                           1667008    unknown                  
+R1   100     100KOHM-0402-1/16W-1% 0402     100kΩ resistor                                         RES-13495 100K 
+R2   100K    100KOHM-0402-1/16W-1% 0402     100kΩ resistor                                         RES-13495 100K 
+S1   RDT1034 RDT1034               RDT1034  PUSH SWITCH                                                           
+U1   328P    ATMEGA328P_PDIP       DIP28    Atmel 328P                                             IC-09136  328P 
