@@ -3,7 +3,7 @@
 <eagle version="9.2.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -52,7 +52,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
@@ -157,11 +157,16 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyYTUyZjgw" projecturn="a.cGVyc29uYWw6dWUyYTUyZjgwIzIwMTgwMTE4MTEyOTk4MTUx" f3durn="urn:adsk.wipprod:dm.lineage:dA__Lqd2TvqUaQ0AZ8b9gA" pcbguid="82a3f82d-7d55-47ad-b88b-db349eaa616a" lastpulledtime="" lastsyncedchangeguid="e95ea2e0-2476-fb2a-1e0b-62e5c6800621"/>
 <plain>
-<wire x1="77.47" y1="40.64" x2="134.6" y2="40.64" width="0" layer="20"/>
-<wire x1="134.6" y1="40.64" x2="134.6" y2="87.3" width="0" layer="20"/>
-<wire x1="134.6" y1="87.3" x2="77.47" y2="87.3" width="0" layer="20"/>
+<wire x1="77.47" y1="40.64" x2="135.87" y2="40.64" width="0" layer="20"/>
+<wire x1="135.87" y1="40.64" x2="135.87" y2="87.3" width="0" layer="20"/>
+<wire x1="135.87" y1="87.3" x2="77.47" y2="87.3" width="0" layer="20"/>
 <wire x1="77.47" y1="87.3" x2="77.47" y2="40.64" width="0" layer="20"/>
+<hole x="82.55" y="83.82" drill="3.175"/>
+<hole x="82.55" y="44.45" drill="3.175"/>
+<hole x="132.08" y="44.45" drill="3.175"/>
+<hole x="132.08" y="83.82" drill="3.175"/>
 </plain>
 <libraries>
 <library name="adafruit" urn="urn:adsk.eagle:library:420">
@@ -794,14 +799,14 @@ design rules under a new name.</description>
 <polygon width="0.1524" layer="1">
 <vertex x="80.01" y="41.91"/>
 <vertex x="80.01" y="86.36"/>
-<vertex x="132.08" y="86.36"/>
-<vertex x="132.08" y="41.91"/>
+<vertex x="134.62" y="86.36"/>
+<vertex x="134.62" y="41.91"/>
 </polygon>
 <polygon width="0.1524" layer="16">
-<vertex x="80.01" y="81.28"/>
-<vertex x="85.09" y="86.36"/>
-<vertex x="132.08" y="86.36"/>
-<vertex x="132.08" y="41.91"/>
+<vertex x="80.01" y="82.55"/>
+<vertex x="83.82" y="86.36"/>
+<vertex x="134.62" y="86.36"/>
+<vertex x="134.62" y="41.91"/>
 <vertex x="80.01" y="41.91"/>
 </polygon>
 <contactref element="U1" pad="22"/>
@@ -887,6 +892,11 @@ design rules under a new name.</description>
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
 with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports Fusion synchronisation.
+This feature will not be available in this version and saving
+the document will break the link to the Fusion PCB feature.
 </note>
 <note version="8.3" severity="warning">
 Since Version 8.3, EAGLE supports URNs for individual library
